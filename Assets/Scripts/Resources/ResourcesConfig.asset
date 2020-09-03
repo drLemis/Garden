@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1cfb908ba48f049ac0228b781bc52b, type: 3}
+  m_Name: ResourcesConfig
+  m_EditorClassIdentifier: 
+  prefabSettable: {fileID: 1530873562445818442, guid: 7d900f4e1cc9f2c4bb66070c28ab0f95,
+    type: 3}
+  resourcesSettable:
+  - name: Garden
+    id: GardenBed
+    amount: 20
+    amountMax: 20
+    icon: {fileID: 21300000, guid: 88c816f6b0234ca4487b1cd9e4581e25, type: 3}
+    prefab: {fileID: 6217536346690162624, guid: 4c3141c657068834ea26e04e4616f85a,
+      type: 3}
+    gatherToolsID:
+    - Shovel
+  prefabPlantable: {fileID: 1590242042865186322, guid: 26cdd71fcb3dda04dae1f12e1bb9a028,
+    type: 3}
+  resourcesPlantable:
+  - name: Wheat
+    id: WheatPlant
+    amount: -1
+    amountMax: -1
+    icon: {fileID: 21300000, guid: 637319d9a1ad3394faa84156eb82575e, type: 3}
+    prefabs:
+    - {fileID: 1589331434144172786, guid: 732c398312ba0544fbd9aa0fd25fa0e0, type: 3}
+    - {fileID: 1589331434144172786, guid: ed1f9535c1005b744bd3054035a2cf24, type: 3}
+    growTimeSeconds: 10
+    needSettableID:
+    - GardenBed
+    gatherToID: WheatGather
+    gatherToolsID:
+    - Sickle
+  - name: Tomato
+    id: TomatoPlant
+    amount: -1
+    amountMax: -1
+    icon: {fileID: 21300000, guid: 7de56587db2628b498262c1c3b5c5226, type: 3}
+    prefabs:
+    - {fileID: 1589331434144172786, guid: 2d7d0348cfe07324fb0d814068285a0e, type: 3}
+    - {fileID: 1589331434144172786, guid: b4a1034b151b3604d8906f79c03eb335, type: 3}
+    growTimeSeconds: 10
+    needSettableID:
+    - GardenBed
+    gatherToID: TomatoGather
+    gatherToolsID:
+    - Sickle
+    - Hand
+  prefabGatherable: {fileID: 7745693277186348065, guid: 94982fb4cc746614796ac09aae602662,
+    type: 3}
+  resourcesGatherable:
+  - name: Wheat
+    id: WheatGather
+    amount: 0
+    amountMax: -1
+    icon: {fileID: 21300000, guid: 637319d9a1ad3394faa84156eb82575e, type: 3}
+  - name: Tomato
+    id: TomatoGather
+    amount: 0
+    amountMax: -1
+    icon: {fileID: 21300000, guid: 7de56587db2628b498262c1c3b5c5226, type: 3}
